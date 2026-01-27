@@ -34,7 +34,7 @@ public class Timetable {
 
     public List<TrainingSession> getTrainingSessionsForDayAndTime(DayOfWeek dayOfWeek, TimeOfDay timeOfDay) {
         TreeMap<TimeOfDay, List<TrainingSession>> scheduleOfDay = timetable.get(dayOfWeek);
-        if (scheduleOfDay == null){
+        if (scheduleOfDay == null) {
             return Collections.emptyList();
         }
         return scheduleOfDay.get(timeOfDay);
