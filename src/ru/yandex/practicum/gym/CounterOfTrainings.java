@@ -16,6 +16,7 @@ public class CounterOfTrainings implements Comparable<CounterOfTrainings> {
     public int getCountOfTrainings() {
         return countOfTrainings;
     }
+
     public void addCountOfTrainings() {
         countOfTrainings++;
     }
